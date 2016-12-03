@@ -1,0 +1,191 @@
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+<title>COMP 105 Assignment: uParty</title>
+<style type="text/css">
+body {
+    font-family: tahoma, verdana, arial, sans-serif;
+    font-size: 11pt;
+}
+
+td {
+    font-family: tahoma, verdana, arial, sans-serif;
+    font-size: 11pt;
+}
+
+p {
+    margin-left: 1em;
+}
+
+
+h1 {
+    color: #35A;
+    border-bottom: 1px solid silver;
+}
+
+h2 {
+    color: #631;
+    margin-left: 0.5em;
+}
+
+hr {
+    border: 1px solid silver;
+}
+
+.hangingindent {
+    padding-left: 22px ;
+    text-indent: -22px ;
+}
+
+table.asst_rubric {
+    border-bottom: 0; 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+table.asst_rubric th, table.asst_rubric td {
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    padding: 6px;
+    vertical-align: top;
+}
+
+table p {
+    margin: 0;
+}
+</style></head>
+<body>
+
+<h1>COMP 105 Assignment: uParty</h1>
+<p>Due <B>Thursday</B>, December 15, at 10:00PM.<br></p>
+
+<p>The purpose of this assignment is to help you get acquainted with your
+fellow classmates after a strugglebus of a semester. The assignment is divided
+into two parts.</p>
+
+<ul>
+    <li>In the first part, you may submit a request for some non-negative
+        number of modules for use in this assignment. Most find this helpful,
+        but for some it is unnecessary.</li>
+    <li>In the second part, you implement <em>uParty</em> at the specified
+        location.</li>
+</ul>
+
+<h2>Individual Problems</h2>
+
+<p><i>Working on your own</i>, please solve <em>Exercise M</em>:</p>
+
+<h3>Problem Details</h3>
+
+<p>If you would prefer not to request a module, please skip this problem.</p>
+
+<p>Request a module for use in <em>uParty</em>. The script to request modules
+for this assignment is in <code>/h/mberns01/request-modules</code>. You will
+need to provide the request script with your Venmo username and number of
+desired modules. If you do not have a Venmo account, you must either create one
+or bring cash. A sample interaction with the script looks as follows:</p>
+<pre>
+     $ /h/mberns01/request-modules
+     What is your Venmo username? Maxwell-Bernstein
+     The cost per module is $X.
+     How many modules would you like to request? 5
+     Thank you and have a nice day!
+</pre>
+
+<p>For students without a Venmo account, the interaction should look as
+follows:</p>
+<pre>
+     $ /h/mberns01/request-modules
+     What is your Venmo username? NONE
+     The cost per module is $X+1.
+     How many modules would you like to request? 5.
+     Thank you, please bring cash, and have a nice day!
+</pre>
+
+<p>Note that value <code>NONE</code> is special in its capitalization.</p>
+
+<h2>Group Problems</h2>
+
+<p>For these problems, you may work with a partner or a group. Please solve the
+following exercise.</p>
+
+<h3>Problem Details</h3>
+
+<p>Sometimes you want to de-stress after the final exam of a difficult course,
+ideally with other students who just finished the same course. In this portion
+of the homework, you will implement <em>uParty</em> in several stages.</p>
+
+<p><b>Get <code>letrec</code>'d</b>
+<i>Subtitle here.</i>
+</p>
+
+<p><b><code>(timesRepeat: 105 {(dance)})</code></b></b>
+<i>Subtitle here.</i>
+</p>
+
+<p><i>uParty</i> follows the following operational semantics:</p>
+
+<img src="opsem.png" />
+
+<p><b>Currently, <i>environment</i> is undefined. If you would like to help
+    define it, please contact Max Bernstein or Maretta Morovitz on
+    Facebook.</b></p>
+
+<p><b></b></p>
+
+<h4>Extra-credit Problems</h4>
+<p>
+<b>Division</b>.
+Implement long division for <code>Natural</code> and for large integers.
+If this changes your argument for the largest possible base, explain
+how.  This <a href="../readings/indexbody.html#division">article</a> by Per
+Brinch Hansen describes how to implement long division.
+
+<p>
+<b>Largest base</b>.
+Change the base to the largest reasonable base, not necessarily a
+power of 10.
+You will have to re-implement <code>decimal</code> using long division.
+<em>Measure</em> the time needed to compute <em>and print</em> the first 50
+factorials.  Does the smaller number of digits recoup the higher cost of
+converting to decimal?
+
+<p>
+<b>Breaking interface barriers with a TA</b>
+</p>
+
+<hr>
+
+<h3>What to submit: Individual Problems</h3>
+
+<p>You should submit one item:
+<ul><li>A module request (optional)</li></ul></p>
+
+<h3>What to submit: Group Problems</h3>
+
+<p>You should submit one item:
+<ul><li>Yourself, to the party</li></ul></p>
+
+<h3>Hints and Guidelines</h3>
+<ul>
+    <p><li>Submit your module request <em>early</em>. Module requests made
+        closer to the party are less likely to get fulfilled.</li></p>
+    <p><li>Pay for your module <em>soon after you request</em>. Modules not
+        paid for <em>will not be purchased</em>.</li></p>
+    <p><li><b>Avoid Smalltalk.</b>
+    The goal of this assignment is to have a good time, not to awkwardly stand
+    around chatting. Do not talk about the weather or how poorly the exam
+    went!</li></p>
+    <p><li>
+        For your reference, this
+        <a href="http://www.imdb.com/title/tt0464907/">critically-acclaimed</a>
+        documentary about partying and social interaction discusses relevant
+        topics at length. It should be free online via questionable
+        means. You may also find the <a
+           href="http://www.bestdegreeprograms.org/geeks-guide-partying/">geek's
+           guide to college parties</a> infographic helpful.</li></p>
+</ul>
+
+<hr>
+
+<p>Back to the <a href="https://www.facebook.com/groups/373509622992773/">Facebook group</a>
+</body></html>
