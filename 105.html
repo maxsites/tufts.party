@@ -78,36 +78,21 @@ into two parts.</p>
 
 <p>If you would prefer not to request a module, please skip this problem.</p>
 
-<p><b>Exercise M.</b> Request a module for use in <em>uParty</em>. The script
-to request modules for this assignment is in
-<code>/h/mberns01/request-modules</code>. You will need to provide the request
-script with your Venmo username and number of desired modules. If you do not
-have a Venmo account, you must either create one or bring cash. A sample
-interaction with the script looks as follows:</p>
-<pre>
-     $ /h/mberns01/request-modules
-     What is your Venmo username? A-Sad-Student
-     The cost per module is $X.
-     How many modules would you like to request? 5
-     Thank you and have a nice day!
-</pre>
+<p><b>Exercise M.</b> Request a module for use in <em>uParty</em>. The form
+to request modules for this assignment can be found <a
+       href="https://goo.gl/forms/CLE4u19koxSqm02T2">here</a>.  You will need
+   to provide the request form with your Venmo username.</p>
 
-<p>For students without a Venmo account, the interaction should look as
-follows:</p>
-<pre>
-     $ /h/mberns01/request-modules
-     What is your Venmo username? NONE
-     The cost per module is $X+1.
-     How many modules would you like to request? 5
-     Thank you, please bring cash, and have a nice day!
-</pre>
+<p>For students without a Venmo account, write the username
+<code>NONE</code>. Students without Venmo accounts are expected to bring cash
+to the door.</p>
 
 <b>Notes:</b>
 <ul>
     <p><li>Option <code>NONE</code> is special in its capitalization.</li></p>
     <p><li>Failing to pay for your module <em>soon after you are charged</em>
         results in exception <code>BringYourOwn</code> being raised.</li><p>
-    <p><li>All requests must go through the module request script. No
+    <p><li>All non-notable requests must go through the module request form. No
         exceptions.</li></p>
 </ul>
 
